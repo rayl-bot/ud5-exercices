@@ -1,7 +1,7 @@
 import javax.swing.JOptionPane;
 
 /*
- *Code by Ra˙l Gonz·lez MÈndez
+ *Code by Ra√∫l Gonz√°lez M√©ndez
  *Version of the app (date dd/mm/yyyy): 07/07/2021
  *
  * CONTENT README.txt-->En este ejercicio vamos a realizar ciertos ejercicios que nos serviran para practicar
@@ -12,13 +12,14 @@ import javax.swing.JOptionPane;
 public class UD5Exercice11App {
 
 	/*
-	 * Crea una aplicaciÛn que nos pida un dÌa de la semana y que nos diga si es un
-	 * dÌa laboral o no. Usa un switch para ello.
+	 * Crea una aplicaci√≥n que nos pida un d√≠a de la semana y que nos diga si es un
+	 * d√≠a laboral o no. Usa un switch para ello.
 	 */
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String day = JOptionPane.showInputDialog("Introduce un dia de la semana (sin acentos): ");
+		//controlamos esta elecci√≥n utilizando un switch case
 		switch (day.toUpperCase()) {
 		case "LUNES":
 			JOptionPane.showMessageDialog(null, "Es laborable");
@@ -44,6 +45,7 @@ public class UD5Exercice11App {
 		default:
 			JOptionPane.showMessageDialog(null, "No se ha introducido un dia valido");
 			break;
+			//si se introduce una fecha erronea, parasar√° a saltar un error
 		}
 	}
 
