@@ -1,6 +1,6 @@
 import javax.swing.*;
 /*
- *Code by Raúl González Méndez
+ *Code by RaÃºl GonzÃ¡lez MÃ©ndez
  *Version of the app (date dd/mm/yyyy): 07/07/2021
  *
  * CONTENT README.txt-->En este ejercicio vamos a realizar ciertos ejercicios que nos serviran para practicar
@@ -9,14 +9,14 @@ import javax.swing.*;
  * */
 
 public class UD5Exercice6App {
-	
+	//creamos una constante global IVA ya que es una variable que no se modificara y la usaremos dentro de los propios metodos
 	public static final double IVA = 0.21;
 	
 	/*
-	 * Lee un número por teclado que pida el precio de un producto (puede tener decimales) y
+	 * Lee un nÃºmero por teclado que pida el precio de un producto (puede tener decimales) y
 	calcule el precio final con IVA. El IVA sera una constante que sera del 21%
 	 */
-	
+	//funcion que calcula la suma del iva al precio que pasamos por parametro
 	public static double priceIVA(double price) {
 		return price+(price*IVA);
 	}
