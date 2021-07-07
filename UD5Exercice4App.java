@@ -1,7 +1,7 @@
 import javax.swing.*;
 
 /*
- *Code by Ra˙l Gonz·lez MÈndez
+ *Code by Ra√∫l Gonz√°lez M√©ndez
  *Version of the app (date dd/mm/yyyy): 07/07/2021
  *
  * CONTENT README.txt-->En este ejercicio vamos a realizar ciertos ejercicios que nos serviran para practicar
@@ -12,20 +12,20 @@ import javax.swing.*;
 public class UD5Exercice4App {
 	
 	/*
-	 * Haz una aplicaciÛn que calcule el ·rea de un circulo (pi*R 2 ). El radio se pedir· por teclado
+	 * Haz una aplicaci√≥n que calcule el √°rea de un circulo (pi*R 2 ). El radio se pedir√° por teclado
 	(recuerda pasar de String a double con Double.parseDouble ). Usa la constante PI y el
-	mÈtodo pow de Math
+	m√©todo pow de Math
 	*/
 	
 	public static double calcArea(double radio) {
-		radio =  Math.pow(radio, 2);
-		return Math.PI*radio;
+		radio =  Math.pow(radio, 2);//utilizamos la funcion Math.pow que permite realizar operaciones elevando numeros
+		return Math.PI*radio;//utilizamos la contante de la libreria Math, PI 
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String textRadio = JOptionPane.showInputDialog("Introduce el radio del cÌrculo: ");
-		double radio = Double.parseDouble(textRadio);
+		String textRadio = JOptionPane.showInputDialog("Introduce el radio del c√≠rculo: ");
+		double radio = Double.parseDouble(textRadio);//pasamos de String a Double usando parseDouble, una funcion de la propia clase double
 		JOptionPane.showMessageDialog(null, "El area del circulo es: "+calcArea(radio));
 	}
 }
