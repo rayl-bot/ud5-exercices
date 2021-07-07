@@ -1,7 +1,7 @@
 import javax.swing.JOptionPane;
 
 /*
- *Code by Raúl González Méndez
+ *Code by RaÃºl GonzÃ¡lez MÃ©ndez
  *Version of the app (date dd/mm/yyyy): 07/07/2021
  *
  * CONTENT README.txt-->En este ejercicio vamos a realizar ciertos ejercicios que nos serviran para practicar
@@ -13,8 +13,8 @@ public class UD5Exercice13App {
 	//En este ejercicio he optado por hacer una funci'on a parte en vez de modificar el nombre de la clase.
 	
 	/*
-	 * Crea una aplicación llamada CalculadoraInversa , nos pedirá 2 operandos int ) y un signo
-	aritmético ( String ), según este último se realizara la operación correspondiente. Al final
+	 * Crea una aplicaciÃ³n llamada CalculadoraInversa , nos pedirÃ¡ 2 operandos int ) y un signo
+	aritmÃ©tico ( String ), segÃºn este Ãºltimo se realizara la operaciÃ³n correspondiente. Al final
 	mostrara el resultado en un cuadro de dialogo.
 	 */
 	
@@ -44,10 +44,7 @@ public class UD5Exercice13App {
 		textNum = JOptionPane.showInputDialog("Introduce otro int: ");
 		int num2 = Integer.parseInt(textNum);
 		String textarit = JOptionPane.showInputDialog("Introduce un signo aritmetico: ");
-		if (calculadoraInversa(num1,num2,textarit) == 0)
-			JOptionPane.showMessageDialog(null, "Error");
-		else
-			JOptionPane.showMessageDialog(null,calculadoraInversa(num1,num2,textarit));
+		JOptionPane.showMessageDialog(null,calculadoraInversa(num1,num2,textarit));
 	}
 	
 }
