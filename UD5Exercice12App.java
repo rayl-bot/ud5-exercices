@@ -1,7 +1,7 @@
 import javax.swing.JOptionPane;
 
 /*
- *Code by Ra˙l Gonz·lez MÈndez
+ *Code by Ra√∫l Gonz√°lez M√©ndez
  *Version of the app (date dd/mm/yyyy): 07/07/2021
  *
  * CONTENT README.txt-->En este ejercicio vamos a realizar ciertos ejercicios que nos serviran para practicar
@@ -12,23 +12,24 @@ import javax.swing.JOptionPane;
 public class UD5Exercice12App {
 	
 	/*
-	 * Escribe una aplicaciÛn con un String que contenga una contraseÒa cualquiera. DespuÈs
-	se te pedir· que introduzcas la contraseÒa, con 3 intentos. Cuando aciertes ya no pedir· mas
-	la contraseÒa y mostrara un mensaje diciendo ì Enhorabuenaî. Piensa bien en la condiciÛn
+	 * Escribe una aplicaci√≥n con un String que contenga una contrase√±a cualquiera. Despu√©s
+	se te pedir√° que introduzcas la contrase√±a, con 3 intentos. Cuando aciertes ya no pedir√° mas
+	la contrase√±a y mostrara un mensaje diciendo ‚Äú Enhorabuena‚Äù. Piensa bien en la condici√≥n
 	de salida (3 intentos y si acierta sale, aunque le queden intentos).
 	 */
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		boolean correct=false;
-		String password = "password";
-		int i = 0;
+		boolean correct=false;//booleano para controlar la salida del bucle
+		String password = "password";//password a introducir
+		int i = 0;//iterador
+		//he optado por hacer un do while porque es la estructura que creo que mejor se adapta a lo que pide el ejercicio
 		do {
 			i++;
-			String passw = JOptionPane.showInputDialog("Introduce el password correcto: ");
-			if (password.equalsIgnoreCase(passw))
-				correct = true;
-		} while (i<3 && !correct);
+			String passw = JOptionPane.showInputDialog("Introduce el password correcto: ");//pedimos un password por pantalla
+			if (password.equals(passw))
+				correct = true;//si pasa a ser true, sale del bucle
+		} while (i<3 && !correct);//tiene un total de 3 intentos para decir el passowrd correcto y salir del bucle, si no habr√° fallado
 		if(correct)
 			JOptionPane.showMessageDialog(null, "Enhorabuena");
 		else
